@@ -25,13 +25,14 @@
       import { getAuth } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 
       const firebaseConfig = {
-        apiKey: "AIzaSyCXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", // Replace with your actual API key
-        authDomain: "book4mu-794ca.firebaseapp.com",
-        projectId: "book4mu-794ca",
-        storageBucket: "book4mu-794ca.appspot.com",
-        messagingSenderId: "123456789012",
-        appId: "1:123456789012:web:abcdefghijklmnop"
-      };
+  apiKey: "AIzaSyC2CHUcuyI48A31DrajCcm782nB2Kl1Fx0",
+  authDomain: "book4mu-794ca.firebaseapp.com",
+  projectId: "book4mu-794ca",
+  storageBucket: "book4mu-794ca.firebasestorage.app",
+  messagingSenderId: "502248330231",
+  appId: "1:502248330231:web:058f4f808514248b2d54f2",
+  measurementId: "G-CF9P3N0KKP"
+};
 
       const app = initializeApp(firebaseConfig);
       window.auth = getAuth(app);
@@ -93,9 +94,9 @@
     <form action="">
         <h3>sign in</h3>
         <span>username</span>
-        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <input type="email" name="" class="box" placeholder="enter your email" id="login-email">
         <span>password</span>
-        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <input type="password" name="" class="box" placeholder="enter your password" id="login-password">
         <div class="checkbox">
             <input type="checkbox" name="" id="remember-me">
             <label for="remember-me"> remember me</label>
@@ -354,7 +355,7 @@
 
     <form action="">
         <h3>subscribe for latest updates</h3>
-        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="email" name="" placeholder="enter your email" id="newsletter-email" class="box">
         <input type="submit" value="subscribe" class="btn">
     </form>
 
@@ -660,7 +661,7 @@
 
 <!-- custom js file link  -->
 <script src="js/api.js"></script>
-<script src="js/auth.js"></script>
+<script src="js/auth.js" type="module"></script>
 <script src="js/products.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/script.js"></script>
