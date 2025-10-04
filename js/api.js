@@ -1,7 +1,7 @@
 // API Configuration - Environment-aware
 const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
 const API_BASE_URL = isProduction
-  ? 'https://books4mu-backend.onrender.com/api'  // Replace with your actual production backend URL
+  ? 'https://vercel-backend-nine.vercel.app/api'  // Vercel backend URL
   : '/api';  // Local development
 
 // Utility function for making API requests
